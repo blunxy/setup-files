@@ -60,7 +60,7 @@ end
 
 #START:VOWS-METHOD
 def run_specs
-  system("~/webapps/sample_app/node_modules/vows/bin/vows node_modules/vows/test/* --spec")
+#  system("~/webapps/sample_app/node_modules/vows/bin/vows node_modules/vows/test/* --spec")
 end
 #END:JASMINE-METHOD
 #END:MERGED
@@ -92,7 +92,7 @@ end
 #START:SPECS
 def run(files_to_run)
   puts("Running: #{files_to_run}")
-  system("clear;rspec -cfs #{files_to_run}")
+  system("clear;rspec ---drb#{files_to_run}")
 end
 #END:SPECS
 #END:ALL_TESTS
